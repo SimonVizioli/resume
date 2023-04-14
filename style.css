@@ -1,12 +1,12 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
     max-width: 960px;
     margin: auto;
 }
 h1 {
     font-size: 3em;
-    letter-spacing: .6em;
+    letter-spacing: 0.6em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -20,7 +20,7 @@ h3 {
     font-size: 1em;
     padding-bottom: 1em;
 }
-main { 
+main {
     display: grid;
     grid-template-columns: 40% 60%;
     margin-top: 3em;
@@ -35,11 +35,11 @@ section {
 }
 
 i {
-    margin-right: .5em;
+    margin-right: 0.5em;
 }
 
 p {
-    margin: .2em auto
+    margin: 0.2em auto;
 }
 
 hr {
@@ -48,10 +48,101 @@ hr {
     height: 1px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 100;
     margin-bottom: 0;
 }
+
 #mainLeft {
     border-right: 1px solid lightgray;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* Clases Boton Toggle */
+
+.buttonToggleDark {
+    background-color: #20262e;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 0.25rem;
+    opacity: 1;
+    cursor: pointer;
+}
+.buttonToggleDark:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.buttonToggleLight {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    color: black;
+    border-radius: 0.25rem;
+    opacity: 1;
+    cursor: pointer;
+}
+.buttonToggleLight:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+/* Clases Div Contacto   */
+
+.contactoDark {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    user-select: none;
+    padding: 5px;
+    background-color: #20262e;
+    color: white;
+    cursor: pointer;
+}
+.contactoLight {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    user-select: none;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* Clases Para mostrar/ocultar Div */
+
+.hide {
+    display: none;
+}
+
+.show {
+    user-select: none;
+    padding: 20px;
+    display: flex;
+}
+
+/* Clases tema claro/oscuro */
+
+.darkTheme {
+    background-color: #20262e;
+    color: white;
+    transition: 0.5s linear;
+}
+.lightTheme {
+    background-color: white;
+    transition: 0.5s linear;
 }

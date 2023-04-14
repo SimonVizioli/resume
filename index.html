@@ -1,130 +1,106 @@
 <html>
-	<head>
-		<link href="style.css" rel="stylesheet">
-		<title>Simple resume</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-		<style>
-			body {
-				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-				font-size: 12px;
-				max-width: 960px;
-				margin: auto;
-			}
-			h1 {
-				font-size: 3em;
-				letter-spacing: .6em;
-				padding-top: 1em;
-				padding-bottom: 1em;
-			}
+    <head>
+        <link href="style.css" rel="stylesheet" />
+        <title>Simón Vizioli | Simple Resume</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/font-awesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
 
-			h2 {
-				font-size: 1.5em;
-				padding-bottom: 1em;
-			}
+    <body
+        id="temaOscuro"
+        onload="themeToggle();mostrarInformacion();"
+        class="lightTheme"
+    >
+        <header id="header">
+            <h1>SIMON VIZIOLI</h1>
+            <hr />
+            Frontend developer - Photographer Freelance
+            <hr />
+        </header>
+        <main>
+            <article id="mainLeft">
+                <section onclick="mostrarInformacion()">
+                    <h2 id="buttonContacto" class="contactoDark">CONTACT</h2>
 
-			h3 {
-				font-size: 1em;
-				padding-bottom: 1em;
-			}
-			main { 
-				display: grid;
-				grid-template-columns: 40% 60%;
-				margin-top: 3em;
-			}
-			header {
-				text-align: center;
-				margin: auto 2em;
-			}
+                    <div id="infoBox" class="hide">
+                        <p>
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <a
+                                href="https://github.com/SimonVizioli"
+                                target="_blank"
+                                >Github</a
+                            >
+                        </p>
+                        <p>
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <a
+                                href="https://www.linkedin.com/in/sim%C3%B3n-vizioli/"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                >Linkedin</a
+                            >
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <h2>SKILLS</h2>
+                    <span
+                        ><p>
+                            • <i class="fa-brands fa-react"> React.js</i>
+                            <i class="fa-brands fa-html5"> HTML</i>
+                            <i class="fa-brands fa-css3-alt"> CSS</i>
+                            <i class="fa-brands fa-js"> JS</i><br />
+                            • Adobe Lightroom <br />• Adobe Photoshop <br />•
+                            DaVinci resolve
+                        </p>
+                    </span>
+                </section>
+                <section>
+                    <h2>EDUCATION</h2>
 
-			section {
-				margin: auto 1em 4em 2em;
-			}
-
-			i {
-				margin-right: .5em;
-			}
-
-			p {
-				margin: .2em auto
-			}
-
-			hr {
-				border: none;
-				background-color: lightgray;
-				height: 1px;
-			}
-
-			h1, h2, h3 {
-				font-weight: 100;
-				margin-bottom: 0;
-			}
-			#mainLeft {
-				border-right: 1px solid lightgray;
-}
-		</style>
-	</head>
-	
-	<body>
-		<header id="header">
-			<h1>SIMON VIZIOLI</h1>
-			<hr>
-			Freelance Frontend dev and Photographer
-			<hr>
-		</header>
-		<main>
-			<article id="mainLeft">
-				<section>
-					<h2>CONTACT</h2>
                     <p>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:simonvizioli@gmail.com">Email</a>
+                        • 2021 - 2022 | Chemical engineering<br />
+                        • 2010 - 2014 | Technology HighSchool PS-113 Tómas Alva
+                        Edison (Programming, Robotics, and computer knowledge)
                     </p>
+                </section>
+            </article>
+            <article id="mainRight">
+                <section>
+                    <h2>LANGUAGES</h2>
                     <p>
-                        <i class="fab fa-github" aria-hidden="true"></i>
-                        <a href="https://github.com/SimonVizioli">Github</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        <a href="https://www.linkedin.com/in/sim%C3%B3n-vizioli/">Linkedin</a>
-                    </p>
-				</section>
-				<section>
-					<h2>SKILLS</h2>
-					
-                    <p>
-                    
-                    • HTML, CSS, JS, React.js, Node.js <br> 
-                    • Adobe Lightroom <br>• Adobe Photoshop <br>• DaVinci resolve
-                    </p>
-				</section>
-				<section>
-					<h2>EDUCATION</h2>
-					
-                    <p>
-                        • 2021 - 2022 | Chemical engineering<br>
-                        • 2010 - 2014 | Technology HighSchool PS-113 Tómas Alva Edison
-(Programming, Robotics, and computer knowledge) 
-                    </p>
-				</section>            
-			</article>
-			<article id="mainRight">
-				<section>
-					<h2>LANGUAGES</h2>
-                    <p>
-                        • German - B2 (Goethe Institut) <br>
-                        • English - B1 <br>
+                        • German - B2 (Goethe Institut) <br />
+                        • English - (Intermediate) <br />
                         • Spanish (Native)
                     </p>
-				</section>
-				<section>
-					<h2>WORK EXPERIENCE</h2>
+                </section>
+
+                <section>
+                    <h2>WORK EXPERIENCE</h2>
                     <p>
-			• 2022 - today | FrontEnd Developer at Departamento General de Irrigación  <br>
-                        • 2016 - today | Freelance Photographer <br>
-                        • 2015 - 2016 | Freelance Frontend dev. (HTML5, CSS3)
+                        • 2022 - today | <b>FrontEnd Developer</b> at
+                        Departamento General de Irrigación <br />
+                        React.Js · Redux · Ionic · <br />
+                        • 2016 - today | Freelance Photographer <br />
+                        • 2015 - 2016 | Freelance Frontend dev <br />
+                        HTML5 · CSS3
                     </p>
-				</section>
-			</article>
-		</main>
-	</body>
+                </section>
+            </article>
+        </main>
+        <button
+            onclick="themeToggle()"
+            id="buttonToggle"
+            class="buttonToggleDark"
+        >
+            Theme Switcher
+        </button>
+    </body>
 </html>
