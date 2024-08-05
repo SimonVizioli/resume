@@ -1,106 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <link href="style.css" rel="stylesheet" />
-        <title>Simón Vizioli | Simple Resume</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/font-awesome.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
-        <script type="text/javascript" src="script.js"></script>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="src/assets/budgetApp.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simón Vizioli - Software Developer</title>
     </head>
-
-    <body
-        id="temaOscuro"
-        onload="themeToggle();mostrarInformacion();"
-        class="lightTheme"
-    >
-        <header id="header">
-            <h1>SIMON VIZIOLI</h1>
-            <hr />
-            Frontend developer - Photographer Freelance
-            <hr />
-        </header>
-        <main>
-            <article id="mainLeft">
-                <section onclick="mostrarInformacion()">
-                    <h2 id="buttonContacto" class="contactoDark">CONTACT</h2>
-
-                    <div id="infoBox" class="hide">
-                        <p>
-                            <i class="fab fa-github" aria-hidden="true"></i>
-                            <a
-                                href="https://github.com/SimonVizioli"
-                                target="_blank"
-                                >Github</a
-                            >
-                        </p>
-                        <p>
-                            <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            <a
-                                href="https://www.linkedin.com/in/sim%C3%B3n-vizioli/"
-                                target="_blank"
-                                rel="noreferrer noopener"
-                                >Linkedin</a
-                            >
-                        </p>
-                    </div>
-                </section>
-                <section>
-                    <h2>SKILLS</h2>
-                    <span
-                        ><p>
-                            • <i class="fa-brands fa-react"> React.js</i>
-                            <i class="fa-brands fa-html5"> HTML</i>
-                            <i class="fa-brands fa-css3-alt"> CSS</i>
-                            <i class="fa-brands fa-js"> JS</i><br />
-                            • Adobe Lightroom <br />• Adobe Photoshop <br />•
-                            DaVinci resolve
-                        </p>
-                    </span>
-                </section>
-                <section>
-                    <h2>EDUCATION</h2>
-
-                    <p>
-                        • 2021 - 2022 | Chemical engineering<br />
-                        • 2010 - 2014 | Technology HighSchool PS-113 Tómas Alva
-                        Edison (Programming, Robotics, and computer knowledge)
-                    </p>
-                </section>
-            </article>
-            <article id="mainRight">
-                <section>
-                    <h2>LANGUAGES</h2>
-                    <p>
-                        • German - B2 (Goethe Institut) <br />
-                        • English - (Intermediate) <br />
-                        • Spanish (Native)
-                    </p>
-                </section>
-
-                <section>
-                    <h2>WORK EXPERIENCE</h2>
-                    <p>
-                        • 2022 - today | <b>FrontEnd Developer</b> at
-                        Departamento General de Irrigación <br />
-                        React.Js · Redux · Ionic · <br />
-                        • 2016 - today | Freelance Photographer <br />
-                        • 2015 - 2016 | Freelance Frontend dev <br />
-                        HTML5 · CSS3
-                    </p>
-                </section>
-            </article>
-        </main>
-        <button
-            onclick="themeToggle()"
-            id="buttonToggle"
-            class="buttonToggleDark"
-        >
-            Theme Switcher
-        </button>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
     </body>
 </html>
