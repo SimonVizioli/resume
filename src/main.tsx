@@ -5,7 +5,9 @@ import App from "./app";
 import Home from "./components/Resume/Home";
 import "./index.css";
 import ErrorPage from "./utils/Error";
-import About from "./components/About";
+import About from "./components/Resume/About";
+import Portfolio from "./components/Resume/Portfolio";
+import Contact from "./components/Resume/Contact";
 
 const router = createBrowserRouter([
     {
@@ -21,12 +23,12 @@ const router = createBrowserRouter([
             },
             {
                 path: "portfolio",
-                element: <div>Hi there</div>,
+                element: <Portfolio />,
                 errorElement: <ErrorPage />,
             },
             {
                 path: "contact",
-                element: <div>Hi there</div>,
+                element: <Contact />,
                 errorElement: <ErrorPage />,
             },
         ],

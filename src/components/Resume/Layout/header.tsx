@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <MotionTransition
             position="right"
-            className="p-3  bg-transparent shadow-lg  w-full absolute inset-x-0 top-0 z-50"
+            className="p-3 bg-transparent shadow-lg w-full fixed inset-x-0 top-0 z-50"
         >
             <nav className="container flex items-center justify-between lg:px-8">
                 <Link to={""}>

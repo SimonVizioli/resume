@@ -1,11 +1,23 @@
 const dataCV = {
     nombre: "Simón Vizioli",
     ubicacion: "Mendoza, Argentina",
-    contacto: {
-        linkedin: "linkedin.com/in/simón-vizioli/",
-        email: "simonvizioi@gmail.com",
-        github: "github.com/SimonVizioli",
-    },
+    contacto: [
+        {
+            id: 1,
+            icon: "Linkedin",
+            link: "linkedin.com/in/simón-vizioli/",
+        },
+        {
+            id: 2,
+            icon: "Mails",
+            link: "github.com/SimonVizioli",
+        },
+        {
+            id: 3,
+            icon: "Github",
+            link: "github.com/SimonVizioli",
+        },
+    ],
     perfil: "Desarrollador de Software con experiencia en React. He implementado exitosamente soluciones de software en diversos proyectos como Frontend developer. Además, lidero y gestiono proyectos como Project Owner y Scrum Master. Aplicando metodologías ágiles, he mejorado la evolución de los proyectos. Además, cuento con experiencia en integración Frontend-Backend y contribuciones al Backend con Java y Node.js.",
     experiencia_laboral: [
         {
@@ -77,6 +89,29 @@ const dataCV = {
             titulo: "Bachiller en Producción de bienes y servicios con orientación en informática",
             ubicacion: "Mendoza, Argentina",
             periodo: "2009 - 2014",
+        },
+    ],
+    proyectos: [
+        {
+            id: 1,
+            title: "ExpensesApp",
+            image: "src/assets/under-construction.webp",
+            urlGithub: "https://github.com/SimonVizioli/WorkoutTracker",
+            urlDemo: "#!",
+        },
+        {
+            id: 2,
+            title: "Workout Tracker",
+            image: "src/assets/under-construction.webp",
+            urlGithub: "https://github.com/SimonVizioli/BudgetApp",
+            urlDemo: "#!",
+        },
+        {
+            id: 3,
+            title: "Express Boilerplate",
+            image: "src/assets/under-construction.webp",
+            urlGithub: "https://github.com/SimonVizioli/CreateExpressProject",
+            urlDemo: undefined,
         },
     ],
     habilidades_adicionales: {
