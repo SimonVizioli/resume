@@ -1,6 +1,7 @@
 import { MotionTransition } from "@/utils/transition-component";
 import React from "react";
 import { Link } from "react-router-dom";
+import perfilGit from "/src/assets/perfil-git-2.jpg";
 
 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     {/* Text and Buttons */}
@@ -13,13 +14,13 @@ import { Link } from "react-router-dom";
         </h1>
         <div className="mt-6 space-x-4">
             <Link
-                to={"/about"}
+                to={"/resume/about"}
                 className="transition ease-in-out delay-150 border-2 border-black text-black py-2 px-4 rounded shadow-lg hover:dark:bg-white hover:bg-black  hover:text-white hover:dark:text-black duration-300 dark:text-white dark:border-white "
             >
                 About me
             </Link>
             <Link
-                to={"/portfolio"}
+                to={"/resume/portfolio"}
                 className="transition ease-in-out delay-150 border-2 border-teal-500 text-black py-2 px-4 rounded shadow-lg hover:bg-teal-500 duration-300 dark:text-white"
             >
                 Portfolio
@@ -73,7 +74,7 @@ const Home: React.FC = () => {
                     </section>
                     <section>
                         <img
-                            src="../../../assets/perfil-git-2.jpg"
+                            src={perfilGit}
                             alt="Simón Vizioli"
                             className="w-80 h-80 md:w-80 md:h-80 rounded-lg shadow-[5px_5px_0px_0px_rgba(0,_98,_90,_0.9)]"
                         />

@@ -11,23 +11,23 @@ import Contact from "./components/Resume/Contact";
 
 const router = createBrowserRouter([
     {
-        path: "/resume",
+        path: "/",
         element: <App />,
         errorElement: <ErrorPage />,
         children: [
-            { path: "", element: <Home />, errorElement: <ErrorPage /> },
+            { path: "resume", element: <Home />, errorElement: <ErrorPage /> },
             {
-                path: "about",
+                path: "/resume/about",
                 element: <About />,
                 errorElement: <ErrorPage />,
             },
             {
-                path: "portfolio",
+                path: "/resume/portfolio",
                 element: <Portfolio />,
                 errorElement: <ErrorPage />,
             },
             {
-                path: "contact",
+                path: "/resume/contact",
                 element: <Contact />,
                 errorElement: <ErrorPage />,
             },
