@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import underConstruction from "/src/assets/under-construction.webp";
 
 interface PortfolioBoxProps {
     data: {
@@ -12,13 +13,13 @@ interface PortfolioBoxProps {
 
 const PortfolioCard = (props: PortfolioBoxProps) => {
     const { data } = props;
-    const { id, title, image, urlDemo, urlGithub } = data;
+    const { id, title, urlDemo, urlGithub } = data;
 
     return (
         <div key={id} className="p-4 border border-teal-50 rounded-xl">
             <h3 className="mb-4 text-xl">{title}</h3>
             <img
-                src={image}
+                src={underConstruction}
                 alt="Image"
                 width={200}
                 height={200}

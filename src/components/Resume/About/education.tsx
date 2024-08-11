@@ -4,7 +4,7 @@ import { MotionTransition } from "@/utils/transition-component";
 const EducationTimeline = () => {
     return (
         <div className="flex flex-col justify-center divide-y divide-slate-200">
-            <div className="w-full max-w-3xl mx-auto py-28 sm:py-32 lg:py-48">
+            <div className="md:w-full w-3/4 max-w-3xl mx-auto py-28 sm:py-32 lg:py-48">
                 <MotionTransition position="right" className="overflow-hidden">
                     <h2 className="text-3xl font-extrabold pb-2 mb-5">
                         Formación Académica
@@ -17,7 +17,7 @@ const EducationTimeline = () => {
                                 key={data.id}
                                 className="relative py-6 pl-8 sm:pl-32 group"
                             >
-                                <h3 className="mb-1 text-2xl font-bold sm:mb-0">
+                                <h3 className="mb-1 md:text-2xl text-lg font-bold sm:mb-0">
                                     {data.institucion}
                                 </h3>
                                 <div
@@ -35,12 +35,14 @@ const EducationTimeline = () => {
                                     <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                                         {data.periodo}
                                     </time>
-                                    <div className="text-xl font-bold text-gray-400">
+                                    <div className="md:text-xl text-lg font-bold text-gray-400">
                                         {data.titulo}
                                     </div>
                                 </div>
                                 <div className="text-slate-400">
-                                    {data.especializacion}
+                                    {data.especializacion?.map((item) => (
+                                        <li>{item}</li>
+                                    ))}
                                 </div>
                             </div>
                         ))}

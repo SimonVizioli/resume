@@ -4,7 +4,7 @@ import { MotionTransition } from "@/utils/transition-component";
 const ExperienceTimeLine = () => {
     return (
         <div className="flex flex-col justify-center divide-y divide-slate-200 ">
-            <div className="w-full max-w-3xl mx-auto py-28 sm:py-32 lg:py-48">
+            <div className="md:w-full w-3/4 max-w-3xl mx-auto py-28 sm:py-32 lg:py-48">
                 <MotionTransition position="right" className="overflow-hidden">
                     <h2 className="text-3xl font-extrabold pb-2 mb-8 text-teal-400">
                         Experiencia Laboral
@@ -40,7 +40,9 @@ const ExperienceTimeLine = () => {
                                     </div>
                                 </div>
                                 <div className="text-slate-400">
-                                    {data.responsabilidades}
+                                    {data.responsabilidades?.map((task) => (
+                                        <li>{task}</li>
+                                    ))}
                                 </div>
                             </div>
                         ))}

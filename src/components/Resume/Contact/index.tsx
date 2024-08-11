@@ -10,7 +10,7 @@ const Contact = () => {
                 <TransitionPage />
                 <div className="flex flex-col justify-center h-full items-center">
                     <MotionTransition position="right">
-                        <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-10">
+                        <h1 className="text-2xl leading-tight text-center md:text-5xl md:mb-10 mb-5">
                             Contacto
                         </h1>
                     </MotionTransition>
