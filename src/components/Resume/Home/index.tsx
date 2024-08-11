@@ -73,7 +73,7 @@ const Home: React.FC = () => {
                     </section>
                     <section>
                         <img
-                            src="src/assets/perfil-git-2.jpg"
+                            src="../../../assets/perfil-git-2.jpg"
                             alt="Simón Vizioli"
                             className="w-80 h-80 md:w-80 md:h-80 rounded-lg shadow-[5px_5px_0px_0px_rgba(0,_98,_90,_0.9)]"
                         />
