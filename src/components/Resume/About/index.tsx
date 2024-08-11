@@ -7,8 +7,8 @@ const About = () => {
     return (
         <>
             <TransitionPage />
-            <EducationTimeline />
             <ExperienceTimeLine />
+            <EducationTimeline />
             <Skills />
         </>
     );

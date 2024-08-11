@@ -6,8 +6,8 @@ const EducationTimeline = () => {
         <div className="flex flex-col justify-center divide-y divide-slate-200">
             <div className="md:w-full w-3/4 max-w-3xl mx-auto py-28 sm:py-32 lg:py-48">
                 <MotionTransition position="right" className="overflow-hidden">
-                    <h2 className="text-3xl font-extrabold pb-2 mb-5">
-                        Formación Académica
+                    <h2 className="text-3xl font-extrabold pb-2 mb-4 flex gap-2">
+                        Formación <p className="text-teal-500">Académica</p>
                     </h2>
                 </MotionTransition>
                 <MotionTransition position="bottom" className="overflow-hidden">
