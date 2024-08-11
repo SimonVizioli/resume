@@ -8,6 +8,7 @@ export default defineConfig(() => {
 
     return {
         plugins: [react()],
+        base: "https://simonvizioli.github.io/",
         server: {
             port: +port,
         },

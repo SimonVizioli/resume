@@ -5,6 +5,7 @@ import App from "./app";
 import Home from "./components/Resume/Home";
 import "./index.css";
 import ErrorPage from "./utils/Error";
+import About from "./components/About";
 
 const router = createBrowserRouter([
     {
@@ -12,11 +13,19 @@ const router = createBrowserRouter([
         element: <App />,
         errorElement: <ErrorPage />,
         children: [
-            { path: "", element: <Home /> },
-            { path: "about", element: <div>Hi there</div> },
-            { path: "education", element: <div>Hi there</div> },
+            { path: "", element: <Home />, errorElement: <ErrorPage /> },
             {
-                path: "experience",
+                path: "about",
+                element: <About />,
+                errorElement: <ErrorPage />,
+            },
+            {
+                path: "portfolio",
+                element: <div>Hi there</div>,
+                errorElement: <ErrorPage />,
+            },
+            {
+                path: "contact",
                 element: <div>Hi there</div>,
                 errorElement: <ErrorPage />,
             },
