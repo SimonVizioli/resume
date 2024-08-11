@@ -11,7 +11,7 @@ import Contact from "./components/Resume/Contact";
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/resuem",
         element: <App />,
         errorElement: <ErrorPage />,
         children: [
