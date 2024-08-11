@@ -80,7 +80,7 @@ const Nav = () => {
         <>
             <nav className="flex  items-center justify-end overflow-hidden">
                 <div className="hidden justify-end md:flex">
-                    <NavLinks className={undefined} />
+                    <NavLinks className="flex gap-3" />
                 </div>
                 <div className="flex justify-end md:hidden">
                     <button onClick={toggleNavbar}>
@@ -118,7 +118,7 @@ const Header = () => {
     return (
         <MotionTransition
             position="right"
-            className="sticky top-0 z-[1] mx-auto  flex w-full max-w-7xl flex-wrap items-center justify-between  p-[2em]  backdrop-blur-[100px] dark:border-gray-800 dark:bg-d-background dark:text-d-text-primary"
+            className="sticky top-0 z-[1] mx-auto  flex w-full max-w-7xl flex-wrap items-center justify-between  p-[2em]   dark:border-gray-800 dark:bg-d-background dark:text-d-text-primary"
         >
             <Logo />
             <Nav />
