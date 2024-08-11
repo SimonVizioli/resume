@@ -11,7 +11,7 @@ const EducationTimeline = () => {
                     </h2>
                 </MotionTransition>
                 <MotionTransition position="bottom" className="overflow-hidden">
-                    <div className="-my-3 ">
+                    <div className="my-3 ">
                         {dataCV.formacion_academica.map((data) => (
                             <div
                                 key={data.id}

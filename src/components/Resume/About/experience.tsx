@@ -11,11 +11,11 @@ const ExperienceTimeLine = () => {
                     </h2>
                 </MotionTransition>
                 <MotionTransition position="bottom">
-                    <div className="-my-3 ">
+                    <div className="my-3 ">
                         {dataCV.experiencia_laboral.map((data) => (
                             <div
                                 key={data.id}
-                                className="relative py- pl-8 sm:pl-32 group"
+                                className="relative py-6 pl-8 sm:pl-32 group"
                             >
                                 <h3 className="mb-1 text-2xl font-bold sm:mb-0">
                                     {data.cargo}

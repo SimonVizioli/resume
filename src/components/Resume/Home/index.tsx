@@ -41,16 +41,16 @@ import { Link } from "react-router-dom";
 const Home: React.FC = () => {
     return (
         <div className="relative isolate px-6 pt-14 lg:px-8">
-            <div className="mx-auto py-32 sm:py-48 lg:py-56">
+            <div className="mx-auto py-32 sm:py-48 lg:py-56 flex justify-center">
                 <MotionTransition
                     position="bottom"
                     className="flex justify-center gap-10"
                 >
-                    <section className="text-start py-16 w-1/2">
-                        <h1 className="text-5xl font-bold text-teal-800 mb-6">
-                            Software Developer
+                    <section className="text-start py-20 w-1/2">
+                        <h1 className="text-5xl font-bold mb-6 flex gap-2">
+                            Software <p className="text-teal-400">Developer </p>
                         </h1>
-                        <p className="text-xl text-teal-900 mb-6">
+                        <p className="text-xl text-teal-600 mb-6">
                             He implementado exitosamente soluciones de software
                             en diversos proyectos como Frontend developer.
                             Además, lidero y gestiono proyectos como Project
@@ -74,8 +74,8 @@ const Home: React.FC = () => {
                     <section>
                         <img
                             src="src/assets/perfil-git-2.jpg"
-                            alt="Your Name"
-                            className="w-64 h-64 md:w-80 md:h-80 rounded-full shadow-lg"
+                            alt="Simón Vizioli"
+                            className="w-80 h-80 md:w-80 md:h-80 rounded-lg shadow-[5px_5px_0px_0px_rgba(0,_98,_90,_0.9)]"
                         />
                     </section>
                 </MotionTransition>

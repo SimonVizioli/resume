@@ -25,7 +25,7 @@ export function MotionTransition(props: MotionTransitionProps) {
     }, [isInView]);
 
     return (
-        <div ref={ref} className="relative overflow-hidden w-fit">
+        <div ref={ref} className="relative overflow-hidden ">
             <motion.div
                 variants={fadeIn(position)}
                 initial="hidden"

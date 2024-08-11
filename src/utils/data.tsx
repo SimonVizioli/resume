@@ -1,21 +1,26 @@
+import { Github, Linkedin, Mails } from "lucide-react";
+
 const dataCV = {
     nombre: "Simón Vizioli",
     ubicacion: "Mendoza, Argentina",
     contacto: [
         {
             id: 1,
-            icon: "Linkedin",
-            link: "linkedin.com/in/simón-vizioli/",
+            icon: <Linkedin />,
+            title: "LinkedIn",
+            link: "https://linkedin.com/in/simón-vizioli/",
         },
         {
             id: 2,
-            icon: "Mails",
-            link: "github.com/SimonVizioli",
+            icon: <Mails />,
+            title: "Email",
+            link: "mailto:simonvizioi@gmail.com",
         },
         {
             id: 3,
-            icon: "Github",
-            link: "github.com/SimonVizioli",
+            icon: <Github />,
+            title: "GitHub",
+            link: "https://github.com/SimonVizioli",
         },
     ],
     perfil: "Desarrollador de Software con experiencia en React. He implementado exitosamente soluciones de software en diversos proyectos como Frontend developer. Además, lidero y gestiono proyectos como Project Owner y Scrum Master. Aplicando metodologías ágiles, he mejorado la evolución de los proyectos. Además, cuento con experiencia en integración Frontend-Backend y contribuciones al Backend con Java y Node.js.",
