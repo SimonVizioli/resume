@@ -9,7 +9,7 @@ const Home: React.FC = () => {
             <div className="mx-auto py-32 sm:py-48 lg:py-56 flex justify-center">
                 <MotionTransition
                     position="bottom"
-                    className="flex justify-center gap-10"
+                    className="flex justify-center md:gap-10"
                 >
                     <section className="text-start py-20 md:w-1/2">
                         <h1 className="md:text-5xl text-4xl font-bold mb-6 flex gap-2">
