@@ -29,74 +29,77 @@ const Skills = () => {
                         Habilidades
                     </h2>
                 </MotionTransition>
-                <MotionTransition position="bottom" className="overflow-hidden">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16">
-                        <div className="p-6 bg-white shadow-lg rounded-lg">
-                            <h3 className="text-xl font-bold text-gray-600 mb-4 flex items-center">
-                                <GiBrain className="text-2xl text-teal-500 mr-2" />{" "}
-                                Hard Skills
-                            </h3>
-                            <ul className="space-y-4">
-                                {dataCV.habilidades_adicionales.hard_skills.map(
-                                    (skill, index) => (
-                                        <li
-                                            key={index}
-                                            className="flex items-center text-slate-600"
-                                        >
-                                            {hardSkillIcons[skill]}
-                                            <span className="ml-2">
-                                                {skill}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
+                    <MotionTransition
+                        position="left"
+                        className="overflow-hidden p-6 dark:bg-white bg-indigo-800 shadow-lg rounded-lg"
+                    >
+                        <h3 className="text-xl font-bold text-white dark:text-gray-600 mb-4 flex items-center">
+                            <GiBrain className="text-2xl text-teal-500 mr-2" />{" "}
+                            Hard Skills
+                        </h3>
+                        <ul className="space-y-4">
+                            {dataCV.habilidades_adicionales.hard_skills.map(
+                                (skill, index) => (
+                                    <li
+                                        key={index}
+                                        className="flex items-center dark:text-slate-600 text-white"
+                                    >
+                                        {hardSkillIcons[skill]}
+                                        <span className="ml-2">{skill}</span>
+                                    </li>
+                                )
+                            )}
+                        </ul>
+                    </MotionTransition>
+                    <MotionTransition
+                        position="right"
+                        className="overflow-hidden p-6 dark:bg-white bg-indigo-800 shadow-lg rounded-lg h-full"
+                    >
+                        <h3 className="text-xl font-bold text-white dark:text-gray-600 mb-4 flex items-center">
+                            <MdLanguage className="text-2xl text-teal-500 mr-2" />{" "}
+                            Idiomas
+                        </h3>
+                        <ul className="space-y-4">
+                            {dataCV.habilidades_adicionales.idiomas.map(
+                                (language, index) => (
+                                    <li
+                                        key={index}
+                                        className="dark:text-slate-600 text-white"
+                                    >
+                                        {language.idioma} - {language.nivel}
+                                        {language.institucion && (
+                                            <span className="text-sm dark:text-slate-500 text-white">
+                                                {" "}
+                                                ({language.institucion})
                                             </span>
-                                        </li>
-                                    )
-                                )}
-                            </ul>
-                        </div>
-
-                        <div className="p-6 bg-white shadow-lg rounded-lg">
-                            <h3 className="text-xl font-bold text-gray-600 mb-4 flex items-center">
-                                <MdLanguage className="text-2xl text-teal-500 mr-2" />{" "}
-                                Idiomas
-                            </h3>
-                            <ul className="space-y-4">
-                                {dataCV.habilidades_adicionales.idiomas.map(
-                                    (language, index) => (
-                                        <li
-                                            key={index}
-                                            className="text-slate-600"
-                                        >
-                                            {language.idioma} - {language.nivel}
-                                            {language.institucion && (
-                                                <span className="text-sm text-gray-500">
-                                                    {" "}
-                                                    ({language.institucion})
-                                                </span>
-                                            )}
-                                        </li>
-                                    )
-                                )}
-                            </ul>
-                        </div>
-
-                        <div className="p-6 bg-white shadow-lg rounded-lg sm:col-span-2">
-                            <h3 className="text-xl font-bold text-gray-600 mb-4 flex items-center">
-                                <GiBrain className="text-2xl text-teal-500 mr-2" />{" "}
-                                Soft Skills
-                            </h3>
-                            <ul className="space-y-4">
-                                {dataCV.habilidades_adicionales.soft_skills.map(
-                                    (skill, index) => (
-                                        <li
-                                            key={index}
-                                            className="text-slate-600"
-                                        >
-                                            {skill}
-                                        </li>
-                                    )
-                                )}
-                            </ul>
-                        </div>
-                    </div>
+                                        )}
+                                    </li>
+                                )
+                            )}
+                        </ul>
+                    </MotionTransition>
+                </div>
+                <MotionTransition
+                    position="bottom"
+                    className="overflow-hidden p-6 dark:bg-white bg-indigo-800 shadow-lg rounded-lg sm:col-span-2 "
+                >
+                    <h3 className="text-xl font-bold text-white dark:text-gray-600 mb-4 flex items-center">
+                        <GiBrain className="text-2xl text-teal-500 mr-2" /> Soft
+                        Skills
+                    </h3>
+                    <ul className="space-y-4">
+                        {dataCV.habilidades_adicionales.soft_skills.map(
+                            (skill, index) => (
+                                <li
+                                    key={index}
+                                    className="dark:text-slate-600 text-white"
+                                >
+                                    {skill}
+                                </li>
+                            )
+                        )}
+                    </ul>
                 </MotionTransition>
             </div>
         </div>

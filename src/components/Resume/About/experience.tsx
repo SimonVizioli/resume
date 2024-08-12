@@ -17,7 +17,7 @@ const ExperienceTimeLine = () => {
                                 key={data.id}
                                 className="relative py-6 pl-8 sm:pl-32 group"
                             >
-                                <h3 className="mb-1 text-2xl font-bold sm:mb-0">
+                                <h3 className="mb-1 text-2xl font-bold sm:mb-0 ">
                                     {data.cargo}
                                 </h3>
                                 <div
@@ -35,11 +35,11 @@ const ExperienceTimeLine = () => {
                                     <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                                         {data.periodo}
                                     </time>
-                                    <div className="text-xl font-bold text-gray-400">
+                                    <div className="text-xl font-bold dark:text-gray-400 text-teal-400">
                                         {data.empresa}
                                     </div>
                                 </div>
-                                <div className="text-slate-400">
+                                <div className="dark:text-slate-400 text-slate-700">
                                     {data.responsabilidades?.map((task) => (
                                         <li>{task}</li>
                                     ))}

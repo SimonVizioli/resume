@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react";
 export type MotionTransitionProps = {
     children: React.ReactNode;
     className?: string;
-    position: "right" | "bottom";
+    position: "right" | "bottom" | "left";
 };
 
 export function MotionTransition(props: MotionTransitionProps) {
