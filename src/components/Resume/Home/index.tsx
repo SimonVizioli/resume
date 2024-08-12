@@ -11,7 +11,7 @@ const Home: React.FC = () => {
                     position="bottom"
                     className="flex justify-center gap-10"
                 >
-                    <section className="text-start py-20 w-1/2">
+                    <section className="text-start py-20 md:w-1/2">
                         <h1 className="md:text-5xl text-4xl font-bold mb-6 flex gap-2">
                             Software <p className="text-teal-400">Developer </p>
                         </h1>
@@ -23,13 +23,13 @@ const Home: React.FC = () => {
                         </p>
                         <div className="flex item-center justify-start gap-3 ">
                             <Link
-                                to={"/about"}
+                                to={"/resume/about"}
                                 className="transition ease-in-out delay-150 border-2 border-black text-black py-2 px-4 rounded shadow-lg hover:dark:bg-white hover:bg-black  hover:text-white hover:dark:text-black duration-300 dark:text-white dark:border-white "
                             >
                                 About me
                             </Link>
                             <Link
-                                to={"/portfolio"}
+                                to={"/resume/portfolio"}
                                 className="transition ease-in-out delay-150 border-2 border-teal-500 text-black py-2 px-4 rounded shadow-lg hover:bg-teal-500 duration-300 dark:text-white"
                             >
                                 Portfolio

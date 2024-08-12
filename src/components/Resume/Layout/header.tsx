@@ -118,7 +118,7 @@ const Header = () => {
     return (
         <MotionTransition
             position="right"
-            className="fixed inset-x-0 top-0 z-50 mx-auto flex w-full flex-wrap items-center justify-between p-3 px-20 shadow-lg bg-white dark:bg-slate-950"
+            className="fixed inset-x-0 top-0 z-50 mx-auto flex w-full flex-wrap items-center justify-between p-3 md:px-20 shadow-lg bg-white dark:bg-slate-950"
         >
             <Logo />
             <Nav />
