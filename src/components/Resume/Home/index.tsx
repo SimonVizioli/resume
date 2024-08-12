@@ -6,7 +6,7 @@ import perfilGit from "/src/assets/perfil-git-2.jpg";
 const Home: React.FC = () => {
     return (
         <div className="relative isolate px-3 md:px-6 lg:px-8 pt-14 ">
-            <div className="mx-auto py-32 sm:py-48 lg:py-56 flex justify-center">
+            <div className="mx-auto py-16 md:32 sm:py-48 lg:py-56 flex justify-center">
                 <MotionTransition
                     position="bottom"
                     className="md:flex md:justify-center md:gap-10"
