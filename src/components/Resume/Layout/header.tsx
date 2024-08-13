@@ -21,6 +21,16 @@ const NavLinks = (props: NavLinksProps) => {
     return (
         <div className={className}>
             <NavLink
+                to={"/resume"}
+                className={`transition ease-in-out delay-150 text-white-200 hover:text-teal-400 ${
+                    location.pathname === "/resume"
+                        ? "border-b-2 border-teal-400 w-fit"
+                        : ""
+                }`}
+            >
+                Home
+            </NavLink>
+            <NavLink
                 to={"/resume/about"}
                 className={`transition ease-in-out delay-150 text-white-200 hover:text-teal-400 ${
                     location.pathname === "/resume/about"

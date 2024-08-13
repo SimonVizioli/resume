@@ -15,7 +15,7 @@ const Contact = () => {
                         </h1>
                     </MotionTransition>
                     <MotionTransition position="bottom">
-                        <div className="relative z-10 grid gap-6 md:grid-cols-3">
+                        <div className="relative z-10 grid md:gap-6 lg:gap-10 md:grid-cols-3">
                             {dataCV.contacto.map((contact) => (
                                 <ContactCard key={contact.id} data={contact} />
                             ))}

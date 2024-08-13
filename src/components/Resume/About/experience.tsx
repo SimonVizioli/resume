@@ -40,9 +40,11 @@ const ExperienceTimeLine = () => {
                                     </div>
                                 </div>
                                 <div className="dark:text-slate-400 text-slate-700">
-                                    {data.responsabilidades?.map((task) => (
-                                        <li>{task}</li>
-                                    ))}
+                                    {data.responsabilidades?.map(
+                                        (task, index) => (
+                                            <li key={index}>{task}</li>
+                                        )
+                                    )}
                                 </div>
                             </div>
                         ))}

@@ -40,9 +40,11 @@ const EducationTimeline = () => {
                                     </div>
                                 </div>
                                 <div className="dark:text-slate-400 text-teal-400 font-bold text-lg">
-                                    {data.especializacion?.map((item) => (
-                                        <li>{item}</li>
-                                    ))}
+                                    {data.especializacion?.map(
+                                        (item, index) => (
+                                            <li key={index}>{item}</li>
+                                        )
+                                    )}
                                 </div>
                             </div>
                         ))}

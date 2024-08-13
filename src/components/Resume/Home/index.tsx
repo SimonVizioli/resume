@@ -15,7 +15,7 @@ const Home: React.FC = () => {
                         <img
                             src={perfilGit}
                             alt="Simón Vizioli"
-                            className="w-64 h-64 md:w-80 md:h-80 rounded-full md:rounded-lg shadow-[5px_5px_0px_0px_rgba(0,_98,_90,_0.9)]  md:flex mx-auto"
+                            className="w-64 h-64 border-2 border-teal-400 shadow-lg md:w-80 md:h-80 rounded-full md:rounded-lg md:shadow-[5px_5px_0px_0px_rgba(0,_98,_90,_0.9)]  md:flex mx-auto"
                         />
                     </section>
                     <section className="text-start md:py-20 py-10 w-fit md:w-1/2">
@@ -31,13 +31,13 @@ const Home: React.FC = () => {
                         <div className="flex item-center justify-start gap-3 ">
                             <Link
                                 to={"/resume/about"}
-                                className="transition ease-in-out delay-150 border-2 border-black text-black py-2 px-4 rounded shadow-lg hover:dark:bg-white hover:bg-black  hover:text-white hover:dark:text-black duration-300 dark:text-white dark:border-white "
+                                className="transition ease-in-out delay-50 border-2 border-black text-black py-2 px-4 rounded shadow-lg hover:dark:bg-white hover:bg-black  hover:text-white hover:dark:text-black duration-300 dark:text-white dark:border-white "
                             >
                                 About me
                             </Link>
                             <Link
                                 to={"/resume/portfolio"}
-                                className="transition ease-in-out delay-150 border-2 border-teal-500 text-black py-2 px-4 rounded shadow-lg hover:bg-teal-500 duration-300 dark:text-white"
+                                className="transition ease-in-out delay-50 border-2 border-teal-500 text-black py-2 px-4 rounded shadow-lg hover:bg-teal-500 duration-300 dark:text-white"
                             >
                                 Portfolio
                             </Link>
