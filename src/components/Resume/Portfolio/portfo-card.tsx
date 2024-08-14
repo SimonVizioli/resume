@@ -1,15 +1,6 @@
 import { Link } from "react-router-dom";
 import underConstruction from "/src/assets/under-construction.webp";
-
-interface PortfolioBoxProps {
-    data: {
-        id: number;
-        title: string;
-        image: string;
-        urlGithub: string;
-        urlDemo: string | undefined;
-    };
-}
+import { PortfolioBoxProps } from "@/utils/types";
 
 const PortfolioCard = (props: PortfolioBoxProps) => {
     const { data } = props;

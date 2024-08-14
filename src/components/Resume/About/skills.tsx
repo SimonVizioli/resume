@@ -1,15 +1,11 @@
-import { FaReact, FaNodeJs, FaJs, FaCss3Alt, FaGitAlt } from "react-icons/fa";
-import { SiTypescript, SiTailwindcss } from "react-icons/si";
-import { MdLanguage } from "react-icons/md";
-import { GiBrain } from "react-icons/gi";
-import { MotionTransition } from "@/utils/transition-component";
 import dataCV from "@/utils/data";
-import { ReactElement } from "react";
+import { MotionTransition } from "@/utils/transition-component";
+import { HardSkillIcons } from "@/utils/types";
 import { Trans, useTranslation } from "react-i18next";
-
-interface HardSkillIcons {
-    [key: string]: ReactElement;
-}
+import { FaCss3Alt, FaGitAlt, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
+import { GiBrain } from "react-icons/gi";
+import { MdLanguage } from "react-icons/md";
+import { SiTailwindcss, SiTypescript } from "react-icons/si";
 
 const Skills = () => {
     const { t } = useTranslation();

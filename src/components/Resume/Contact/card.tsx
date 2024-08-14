@@ -1,13 +1,5 @@
-import { ReactNode } from "react";
+import { ContactCardProps } from "@/utils/types";
 import { Link } from "react-router-dom";
-
-interface ContactCardProps {
-    data: {
-        title: string;
-        link: string;
-        icon: ReactNode;
-    };
-}
 
 const ContactCard = (props: ContactCardProps) => {
     const { data } = props;

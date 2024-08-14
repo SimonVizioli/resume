@@ -10,10 +10,7 @@ import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { ThemeSwitcher } from "./themeSwitch";
 import { useTranslation } from "react-i18next";
-
-interface NavLinksProps {
-    className: string | undefined;
-}
+import { NavLinksProps } from "@/utils/types";
 
 const NavLinks = (props: NavLinksProps) => {
     const { t } = useTranslation();
