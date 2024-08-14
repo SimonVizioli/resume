@@ -1,18 +1,23 @@
 import dataCV from "@/utils/data";
 import { MotionTransition } from "@/utils/transition-component";
+import { Trans, useTranslation } from "react-i18next";
 
 const ExperienceTimeLine = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="flex flex-col justify-center divide-y divide-slate-200 ">
             <div className="md:w-full w-3/4 max-w-3xl mx-auto py-28 sm:py-32 lg:py-48">
                 <MotionTransition position="right" className="overflow-hidden">
                     <h2 className="text-3xl font-extrabold pb-2 mb-2 flex gap-2">
-                        Experiencia <p className="text-teal-400">Laboral</p>
+                        <Trans i18nKey={"ExperienceH2"}>
+                            Experiencia <p className="text-teal-400">Laboral</p>
+                        </Trans>
                     </h2>
                 </MotionTransition>
                 <MotionTransition position="bottom">
                     <div className="my-3 ">
-                        {dataCV.experiencia_laboral.map((data) => (
+                        {dataCV.experiencia_laboral.map((data, index) => (
                             <div
                                 key={data.id}
                                 className="relative py-6 pl-8 sm:pl-32 group"
@@ -36,13 +41,19 @@ const ExperienceTimeLine = () => {
                                         {data.periodo}
                                     </time>
                                     <div className="text-xl font-bold dark:text-gray-400 text-teal-400">
-                                        {data.empresa}
+                                        {t(
+                                            `experiencia_laboral.${index}.empresa`
+                                        )}
                                     </div>
                                 </div>
                                 <div className="dark:text-slate-400 text-slate-700">
                                     {data.responsabilidades?.map(
-                                        (task, index) => (
-                                            <li key={index}>{task}</li>
+                                        (_task, indexChld) => (
+                                            <li key={indexChld}>
+                                                {t(
+                                                    `experiencia_laboral.${index}.responsabilidades.${indexChld}`
+                                                )}
+                                            </li>
                                         )
                                     )}
                                 </div>

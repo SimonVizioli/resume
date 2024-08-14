@@ -2,8 +2,11 @@ import { MotionTransition } from "@/utils/transition-component";
 import React from "react";
 import { Link } from "react-router-dom";
 import perfilGit from "/src/assets/perfil-git-2.jpg";
+import { useTranslation } from "react-i18next";
 
 const Home: React.FC = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="relative isolate px-3 md:px-6 lg:px-8 pt-14 ">
             <div className="mx-auto py-16 md:32 sm:py-48 lg:py-56 flex justify-center">
@@ -23,17 +26,14 @@ const Home: React.FC = () => {
                             Software <p className="text-teal-400">Developer </p>
                         </h1>
                         <p className="md:text-xl text-base text-teal-600 mb-6">
-                            He implementado exitosamente soluciones de software
-                            en diversos proyectos como Frontend developer.
-                            Además, lidero y gestiono proyectos como Project
-                            Owner y Scrum Master.
+                            {t(`Home`)}
                         </p>
                         <div className="flex item-center justify-start gap-3 ">
                             <Link
                                 to={"/about"}
                                 className="transition ease-in-out delay-50 border-2 border-black text-black py-2 px-4 rounded shadow-lg hover:dark:bg-white hover:bg-black  hover:text-white hover:dark:text-black duration-300 dark:text-white dark:border-white "
                             >
-                                About me
+                                {t(`Nav.${1}`)}
                             </Link>
                             <Link
                                 to={"/portfolio"}

@@ -1,0 +1,114 @@
+{
+    "Home": "He implementado exitosamente soluciones de software en diversos proyectos como Frontend developer. Además, lidero y gestiono proyectos como Project Owner y Scrum Master.",
+    "Nav": ["Inicio", "Sobre Mi", "Portfolio", "Contacto"],
+    "EducationH2": "Formación <1>Académica</1>",
+    "ExperienceH2": "Experiencia <1>Laboral</1>",
+    "HabilidadesH2": "Habilidades",
+    "IdiomasH3": "Idiomas",
+    "PortfolioH1": "Mis últimos <1>trabajos realizados</1>",
+    "ContactoH1": "Información de Contacto",
+    "formacion_academica": [
+        {
+            "institucion": "CERTIFICACION CDT - DIGITAL HOUSE",
+            "especializacion": ["Especialización frontend"],
+            "modalidad": "virtual",
+            "periodo": "En curso"
+        },
+        {
+            "institucion": "UNDERSTANDING TYPESCRIPT - UDEMY",
+            "modalidad": "virtual",
+            "periodo": "En curso"
+        },
+        {
+            "institucion": "Procesamiento de datos con Python",
+            "modalidad": "virtual",
+            "periodo": "2023",
+            "especializacion": ["Machine Learning - Python y Pandas"]
+        },
+        {
+            "institucion": "RedHat - RH124",
+            "especializacion": ["Red Hat System Administration I"],
+            "modalidad": "virtual",
+            "periodo": "2023"
+        },
+        {
+            "institucion": "ARGENTINA PROGRAMA 4.0",
+            "especializacion": [
+                "Programación Funcional",
+                "Programación Orientada a Objetos"
+            ],
+            "ubicacion": "Mendoza, Argentina",
+            "periodo": "2022 - 2023"
+        },
+        {
+            "institucion": "UNIVERSIDAD TECNOLÓGICA NACIONAL",
+            "titulo": "Ingeniería Química",
+            "ubicacion": "Mendoza, Argentina",
+            "periodo": "2020 - 2022"
+        },
+        {
+            "institucion": "COLEGIO TOMÁS ALVA EDISON",
+            "titulo": "Bachiller en Producción de bienes y servicios con orientación en informática",
+            "ubicacion": "Mendoza, Argentina",
+            "periodo": "2009 - 2014"
+        }
+    ],
+    "experiencia_laboral": [
+        {
+            "empresa": "Departamento General de Irrigación",
+            "cargo": "Project Manager",
+            "ubicacion": "Mendoza, Argentina",
+            "periodo": "2023 – 2024",
+            "responsabilidades": [
+                "Gestiono el equipo de desarrollo para crear un software de planificación a medida, integrando el negocio de la empresa a la planificación.",
+                "Lidero un equipo de desarrollo para crear un software de procesamiento de muestras, facilitando la gestión, trazabilidad, procesamiento y entrega de los resultados de las respectivas muestras.",
+                "Implementé un sistema de logs para facilitar el seguimiento del avance de los proyectos y utilicé Jira para la gestión de tareas y procesos."
+            ]
+        },
+        {
+            "empresa": "Departamento General de Irrigación",
+            "cargo": "Frontend Developer",
+            "periodo": "2022 - 2023",
+            "responsabilidades": [
+                "Desarrollé el sistema de planificación como Lead Frontend, estandarizando procesos, controlando la calidad del código y brindando estructura al proceso.",
+                "Construí el frontend del sistema de procesamiento de muestras, estandarizando procesos para commits, controlando la calidad del código y brindando estructura al proceso.",
+                "Implementé visualizaciones de mapas en una aplicación de telemetría, facilitando la ubicación espacial de los usuarios para auditar sensores."
+            ]
+        },
+        {
+            "cargo": "Fotógrafo Independiente",
+            "empresa": "Freelance",
+            "ubicacion": "Mendoza, Argentina",
+            "periodo": "2015 – 2022"
+        }
+    ],
+    "hard_skills": [
+        "React.js",
+        "JavaScript",
+        "TypeScript",
+        "CSS",
+        "Tailwind",
+        "Git",
+        "Node.js"
+    ],
+    "soft_skills": [
+        "Metodologías Agile",
+        "Scrum",
+        "Interacción con el Cliente"
+    ],
+    "idiomas": [
+        {
+            "idioma": "Español",
+            "nivel": "Nativo"
+        },
+        {
+            "idioma": "Inglés",
+            "nivel": "C1"
+        },
+        {
+            "idioma": "Alemán",
+            "nivel": "B2",
+            "institucion": "Goethe Institut 2017- 2019"
+        }
+    ]
+}

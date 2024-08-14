@@ -5,12 +5,14 @@ import { GiBrain } from "react-icons/gi";
 import { MotionTransition } from "@/utils/transition-component";
 import dataCV from "@/utils/data";
 import { ReactElement } from "react";
+import { Trans, useTranslation } from "react-i18next";
 
 interface HardSkillIcons {
     [key: string]: ReactElement;
 }
 
 const Skills = () => {
+    const { t } = useTranslation();
     const hardSkillIcons: HardSkillIcons = {
         "React.js": <FaReact className="text-teal-500" />,
         JavaScript: <FaJs className="text-yellow-500" />,
@@ -26,7 +28,7 @@ const Skills = () => {
             <div className="md:w-full w-3/4 max-w-3xl mx-auto py-28 sm:py-32 lg:py-48">
                 <MotionTransition position="right" className="overflow-hidden">
                     <h2 className="text-3xl font-extrabold pb-8 mb-10 ">
-                        Habilidades
+                        <Trans i18nKey={"HabilidadesH2"}>Habilidades</Trans>
                     </h2>
                 </MotionTransition>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
@@ -58,7 +60,7 @@ const Skills = () => {
                     >
                         <h3 className="text-xl font-bold text-white dark:text-gray-600 mb-4 flex items-center">
                             <MdLanguage className="text-2xl text-teal-500 mr-2" />{" "}
-                            Idiomas
+                            <Trans i18nKey={"IdiomasH3"}>Idiomas</Trans>
                         </h3>
                         <ul className="space-y-4">
                             {dataCV.habilidades_adicionales.idiomas.map(
@@ -67,7 +69,8 @@ const Skills = () => {
                                         key={index}
                                         className="dark:text-slate-600 text-white"
                                     >
-                                        {language.idioma} - {language.nivel}
+                                        {t(`idiomas.${index}.idioma`)} -{" "}
+                                        {t(`idiomas.${index}.nivel`)}
                                         {language.institucion && (
                                             <span className="text-sm dark:text-slate-500 text-white">
                                                 {" "}
@@ -90,12 +93,12 @@ const Skills = () => {
                     </h3>
                     <ul className="space-y-4">
                         {dataCV.habilidades_adicionales.soft_skills.map(
-                            (skill, index) => (
+                            (_skill, index) => (
                                 <li
                                     key={index}
                                     className="dark:text-slate-600 text-white"
                                 >
-                                    {skill}
+                                    {t(`soft_skills.${index}`)}
                                 </li>
                             )
                         )}

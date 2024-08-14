@@ -1,24 +1,31 @@
 import dataCV from "@/utils/data";
 import { MotionTransition } from "@/utils/transition-component";
+import { useTranslation, Trans } from "react-i18next";
 
 const EducationTimeline = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="flex flex-col justify-center divide-y divide-slate-200">
             <div className="md:w-full w-3/4 max-w-3xl mx-auto py-28 sm:py-32 lg:py-48">
                 <MotionTransition position="right" className="overflow-hidden">
                     <h2 className="text-3xl font-extrabold pb-2 mb-4 flex gap-2">
-                        Formación <p className="text-teal-500">Académica</p>
+                        <Trans i18nKey={"EducationH2"}>
+                            Formación <p className="text-teal-500">Académica</p>
+                        </Trans>
                     </h2>
                 </MotionTransition>
                 <MotionTransition position="bottom" className="overflow-hidden">
                     <div className="my-3 ">
-                        {dataCV.formacion_academica.map((data) => (
+                        {dataCV.formacion_academica.map((data, index) => (
                             <div
                                 key={data.id}
                                 className="relative py-6 pl-8 sm:pl-32 group"
                             >
                                 <h3 className="mb-1 md:text-2xl text-lg font-bold sm:mb-0">
-                                    {data.institucion}
+                                    {t(
+                                        `formacion_academica.${index}.institucion`
+                                    )}
                                 </h3>
                                 <div
                                     className="flex flex-col sm:flex-row items-start mb-1 
@@ -33,16 +40,26 @@ const EducationTimeline = () => {
                                         after:translate-y-1.5"
                                 >
                                     <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
-                                        {data.periodo}
+                                        {t(
+                                            `formacion_academica.${index}.periodo`
+                                        )}
                                     </time>
-                                    <div className="md:text-xl text-lg font-bold dark:text-gray-400 text-teal-400">
-                                        {data.titulo}
-                                    </div>
+                                    {data.titulo && (
+                                        <div className="md:text-xl text-lg font-bold dark:text-gray-400 text-teal-400">
+                                            {t(
+                                                `formacion_academica.${index}.titulo`
+                                            )}
+                                        </div>
+                                    )}
                                 </div>
                                 <div className="dark:text-slate-400 text-teal-400 font-bold text-lg">
                                     {data.especializacion?.map(
-                                        (item, index) => (
-                                            <li key={index}>{item}</li>
+                                        (_item, indexChld) => (
+                                            <li key={indexChld}>
+                                                {t(
+                                                    `formacion_academica.${index}.especializacion.${indexChld}`
+                                                )}
+                                            </li>
                                         )
                                     )}
                                 </div>

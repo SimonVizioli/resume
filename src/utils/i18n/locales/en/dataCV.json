@@ -1,0 +1,112 @@
+{
+    "Home": "I have successfully implemented software solutions in various projects as a Frontend developer. Additionally, I lead and manage projects as a Project Owner and Scrum Master.",
+    "Nav": ["Home", "About", "Portfolio", "Contact"],
+    "EducationH2": "Academic <1>Background</1>",
+    "ExperienceH2": "Work <1>Experience</1>",
+    "HabilidadesH2": "Skills",
+    "IdiomasH3": "Languages",
+    "PortfolioH1": "Recent <1>Projects</1>",
+    "ContactoH1": "Contact Information",
+    "formacion_academica": [
+        {
+            "institucion": "CDT CERTIFICATION - DIGITAL HOUSE",
+            "especializacion": ["Frontend Specialization"],
+            "modalidad": "Online",
+            "periodo": "Ongoing"
+        },
+        {
+            "institucion": "UNDERSTANDING TYPESCRIPT - UDEMY",
+            "modalidad": "Online",
+            "periodo": "Ongoing"
+        },
+        {
+            "institucion": "Data Processing with Python",
+            "modalidad": "Online",
+            "periodo": "2023",
+            "especializacion": ["Machine Learning - Python and Pandas"]
+        },
+        {
+            "institucion": "RedHat - RH124",
+            "especializacion": ["Red Hat System Administration I"],
+            "modalidad": "Online",
+            "periodo": "2023"
+        },
+        {
+            "institucion": "ARGENTINA PROGRAMA 4.0",
+            "especializacion": [
+                "Functional Programming",
+                "Object-Oriented Programming"
+            ],
+            "ubicacion": "Mendoza, Argentina",
+            "periodo": "2022 - 2023"
+        },
+        {
+            "institucion": "UNIVERSIDAD TECNOLÓGICA NACIONAL",
+            "titulo": "Chemical Engineering",
+            "ubicacion": "Mendoza, Argentina",
+            "periodo": "2020 - 2022"
+        },
+        {
+            "institucion": "TOMÁS ALVA EDISON HIGH SCHOOL",
+            "titulo": "Bachelor's Degree in Production of Goods and Services with a focus on Computer Science",
+            "ubicacion": "Mendoza, Argentina",
+            "periodo": "2009 - 2014"
+        }
+    ],
+    "experiencia_laboral": [
+        {
+            "empresa": "Departamento General de Irrigación",
+            "cargo": "Project Manager",
+            "ubicacion": "Mendoza, Argentina",
+            "periodo": "2023 – 2024",
+            "responsabilidades": [
+                "I manage the development team to create custom planning software, integrating the company's business with planning.",
+                "I lead a development team to create sample processing software, facilitating the management, traceability, processing, and delivery of the respective sample results.",
+                "I implemented a logging system to facilitate project progress tracking and used Jira for task and process management."
+            ]
+        },
+        {
+            "empresa": "Departamento General de Irrigación",
+            "cargo": "Frontend Developer",
+            "ubicacion": "Mendoza, Argentina",
+            "periodo": "2022 - 2023",
+            "responsabilidades": [
+                "I developed the planning system as Lead Frontend, standardizing processes, controlling code quality, and providing structure to the process.",
+                "I built the frontend of the sample processing system, standardizing processes for commits, controlling code quality, and providing structure to the process.",
+                "I implemented map visualizations in a telemetry application, facilitating the spatial location of users to audit sensors."
+            ]
+        },
+        {
+            "empresa": "Freelance",
+            "cargo": "Freelance Photographer",
+            "ubicacion": "Mendoza, Argentina",
+            "periodo": "2015 – 2022"
+        }
+    ],
+
+    "hard_skills": [
+        "React.js",
+        "JavaScript",
+        "TypeScript",
+        "CSS",
+        "Tailwind",
+        "Git",
+        "Node.js"
+    ],
+    "soft_skills": ["Agile Methodologies", "Scrum", "Client Interaction"],
+    "idiomas": [
+        {
+            "idioma": "Spanish",
+            "nivel": "Native"
+        },
+        {
+            "idioma": "English",
+            "nivel": "C1"
+        },
+        {
+            "idioma": "German",
+            "nivel": "B2",
+            "institucion": "Goethe Institut 2017-2019"
+        }
+    ]
+}

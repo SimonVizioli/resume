@@ -7,6 +7,7 @@ import Contact from "./components/Resume/Contact";
 import Home from "./components/Resume/Home";
 import Portfolio from "./components/Resume/Portfolio";
 import "./index.css";
+import "./utils/i18n/index.ts";
 import ErrorPage from "./utils/Error";
 
 const router = createHashRouter([

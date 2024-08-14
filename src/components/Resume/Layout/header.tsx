@@ -9,12 +9,14 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { ThemeSwitcher } from "./themeSwitch";
+import { useTranslation } from "react-i18next";
 
 interface NavLinksProps {
     className: string | undefined;
 }
 
 const NavLinks = (props: NavLinksProps) => {
+    const { t } = useTranslation();
     const location = useLocation();
     const { className } = props;
 
@@ -28,7 +30,7 @@ const NavLinks = (props: NavLinksProps) => {
                         : ""
                 }`}
             >
-                Home
+                {t(`Nav.${0}`)}
             </NavLink>
             <NavLink
                 to={"/about"}
@@ -38,7 +40,7 @@ const NavLinks = (props: NavLinksProps) => {
                         : ""
                 }`}
             >
-                About
+                {t(`Nav.${1}`)}
             </NavLink>
             <NavLink
                 to={"/portfolio"}
@@ -48,7 +50,7 @@ const NavLinks = (props: NavLinksProps) => {
                         : ""
                 }`}
             >
-                Portfolio
+                {t(`Nav.${2}`)}
             </NavLink>
             <NavLink
                 to={"/contact"}
@@ -58,7 +60,7 @@ const NavLinks = (props: NavLinksProps) => {
                         : ""
                 }`}
             >
-                Contact
+                {t(`Nav.${3}`)}
             </NavLink>
         </div>
     );
@@ -75,6 +77,10 @@ const Logo = () => {
 };
 
 const Nav = () => {
+    const {
+        i18n: { changeLanguage, language },
+    } = useTranslation();
+    const [currentLanguage, setCurrentLanguage] = useState(language);
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
 
@@ -85,6 +91,12 @@ const Nav = () => {
     useEffect(() => {
         setIsOpen(false);
     }, [location.pathname]);
+
+    const handleChangeLanguage = () => {
+        const newLanguage = currentLanguage === "en" ? "es" : "en";
+        setCurrentLanguage(newLanguage);
+        changeLanguage(newLanguage);
+    };
 
     return (
         <>
@@ -97,7 +109,15 @@ const Nav = () => {
                         {isOpen ? <X /> : <Menu />}
                     </button>
                 </div>
-                <div className=" justify-end">
+                <div className="justify-end flex">
+                    <div className="ml-3 flex justify-center">
+                        <button
+                            onClick={handleChangeLanguage}
+                            className="bg-teal-700 rounded-lg px-2"
+                        >
+                            {currentLanguage.toLocaleUpperCase()}
+                        </button>
+                    </div>
                     <ThemeSwitcher />
                 </div>
             </nav>
