@@ -21,9 +21,9 @@ const NavLinks = (props: NavLinksProps) => {
     return (
         <div className={className}>
             <NavLink
-                to={"/resume"}
+                to={"/"}
                 className={`transition ease-in-out delay-150 text-white-200 hover:text-teal-400 ${
-                    location.pathname === "/resume"
+                    location.pathname === "/"
                         ? "border-b-2 border-teal-400 w-fit"
                         : ""
                 }`}
@@ -31,9 +31,9 @@ const NavLinks = (props: NavLinksProps) => {
                 Home
             </NavLink>
             <NavLink
-                to={"/resume/about"}
+                to={"/about"}
                 className={`transition ease-in-out delay-150 text-white-200 hover:text-teal-400 ${
-                    location.pathname === "/resume/about"
+                    location.pathname === "/about"
                         ? "border-b-2 border-teal-400 w-fit"
                         : ""
                 }`}
@@ -41,9 +41,9 @@ const NavLinks = (props: NavLinksProps) => {
                 About
             </NavLink>
             <NavLink
-                to={"/resume/portfolio"}
+                to={"/portfolio"}
                 className={`transition ease-in-out delay-150 text-white-200 hover:text-teal-400 ${
-                    location.pathname === "/resume/portfolio"
+                    location.pathname === "/portfolio"
                         ? "border-b-2 border-teal-400 w-fit"
                         : ""
                 }`}
@@ -51,9 +51,9 @@ const NavLinks = (props: NavLinksProps) => {
                 Portfolio
             </NavLink>
             <NavLink
-                to={"/resume/contact"}
+                to={"/contact"}
                 className={`transition ease-in-out delay-150 text-white-200 hover:text-teal-400 ${
-                    location.pathname === "/resume/contact"
+                    location.pathname === "/contact"
                         ? "border-b-2 border-teal-400 w-fit"
                         : ""
                 }`}
@@ -66,7 +66,7 @@ const NavLinks = (props: NavLinksProps) => {
 
 const Logo = () => {
     return (
-        <NavLink to={"resume"}>
+        <NavLink to={""}>
             <h1 className="text-3xl font-bold flex items-center space-x-4">
                 Simón <p className="text-teal-400"> Vizioli</p>
             </h1>

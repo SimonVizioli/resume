@@ -1,33 +1,33 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import App from "./app";
+import About from "./components/Resume/About";
+import Contact from "./components/Resume/Contact";
 import Home from "./components/Resume/Home";
+import Portfolio from "./components/Resume/Portfolio";
 import "./index.css";
 import ErrorPage from "./utils/Error";
-import About from "./components/Resume/About";
-import Portfolio from "./components/Resume/Portfolio";
-import Contact from "./components/Resume/Contact";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <App />,
         errorElement: <ErrorPage />,
         children: [
-            { path: "resume", element: <Home />, errorElement: <ErrorPage /> },
+            { path: "/", element: <Home />, errorElement: <ErrorPage /> },
             {
-                path: "/resume/about",
+                path: "/about",
                 element: <About />,
                 errorElement: <ErrorPage />,
             },
             {
-                path: "/resume/portfolio",
+                path: "/portfolio",
                 element: <Portfolio />,
                 errorElement: <ErrorPage />,
             },
             {
-                path: "/resume/contact",
+                path: "/contact",
                 element: <Contact />,
                 errorElement: <ErrorPage />,
             },
