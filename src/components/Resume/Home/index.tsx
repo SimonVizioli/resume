@@ -30,13 +30,13 @@ const Home: React.FC = () => {
                         </p>
                         <div className="flex item-center justify-start gap-3 ">
                             <Link
-                                to={"/resume/about"}
+                                to={"/about"}
                                 className="transition ease-in-out delay-50 border-2 border-black text-black py-2 px-4 rounded shadow-lg hover:dark:bg-white hover:bg-black  hover:text-white hover:dark:text-black duration-300 dark:text-white dark:border-white "
                             >
                                 About me
                             </Link>
                             <Link
-                                to={"/resume/portfolio"}
+                                to={"/portfolio"}
                                 className="transition ease-in-out delay-50 border-2 border-teal-500 text-black py-2 px-4 rounded shadow-lg hover:bg-teal-500 duration-300 dark:text-white"
                             >
                                 Portfolio
