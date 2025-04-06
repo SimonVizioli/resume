@@ -21,7 +21,7 @@ const Home: React.FC = () => {
                             className="w-64 h-64 border-2 border-teal-400 shadow-lg md:w-80 md:h-80 rounded-full md:rounded-lg md:shadow-[5px_5px_0px_0px_rgba(0,_98,_90,_0.9)]  md:flex mx-auto"
                         />
                     </section>
-                    <section className="text-start md:py-20 py-10 w-fit md:w-1/2">
+                    <section className="text-start md:py-10 py-8 w-fit md:w-1/2">
                         <h1 className="md:text-5xl text-3xl font-bold mb-6 flex gap-2">
                             Software <p className="text-teal-400">Developer </p>
                         </h1>
