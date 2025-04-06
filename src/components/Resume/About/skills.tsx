@@ -5,7 +5,12 @@ import { Trans, useTranslation } from "react-i18next";
 import { FaCss3Alt, FaGitAlt, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 import { GiBrain } from "react-icons/gi";
 import { MdLanguage } from "react-icons/md";
-import { SiTailwindcss, SiTypescript } from "react-icons/si";
+import {
+    SiMongodb,
+    SiPostgresql,
+    SiTailwindcss,
+    SiTypescript,
+} from "react-icons/si";
 
 const Skills = () => {
     const { t } = useTranslation();
@@ -17,6 +22,8 @@ const Skills = () => {
         Tailwind: <SiTailwindcss className="text-teal-300" />,
         Git: <FaGitAlt className="text-orange-500" />,
         "Node.js": <FaNodeJs className="text-green-600" />,
+        MongoDB: <SiMongodb className="text-green-400" />,
+        PostgreSQL: <SiPostgresql className="text-blue-800" />,
     };
 
     return (

@@ -1,5 +1,5 @@
 {
-    "Home": "He implementado exitosamente soluciones de software en diversos proyectos como Frontend developer. Además, lidero y gestiono proyectos como Project Owner y Scrum Master.",
+    "Home": "Desarrollador de Software de Argentina con experiencia full-stack utilizando React, Node.js y más. He implementado con éxito soluciones de software en diversos proyectos y destaco en liderar equipos como Project Owner y Scrum Master, aprovechando metodologías ágiles para impulsar el éxito. ",
     "Nav": ["Inicio", "Sobre Mi", "Portfolio", "Contacto"],
     "EducationH2": "Formación <1>Académica</1>",
     "ExperienceH2": "Experiencia <1>Laboral</1>",
@@ -56,23 +56,25 @@
     "experiencia_laboral": [
         {
             "empresa": "Departamento General de Irrigación",
-            "cargo": "Project Manager",
+            "cargo": "Gerente de Proyecto",
             "ubicacion": "Mendoza, Argentina",
             "periodo": "2023 – 2024",
             "responsabilidades": [
-                "Gestiono el equipo de desarrollo para crear un software de planificación a medida, integrando el negocio de la empresa a la planificación.",
-                "Lidero un equipo de desarrollo para crear un software de procesamiento de muestras, facilitando la gestión, trazabilidad, procesamiento y entrega de los resultados de las respectivas muestras.",
-                "Implementé un sistema de logs para facilitar el seguimiento del avance de los proyectos y utilicé Jira para la gestión de tareas y procesos."
+                "Implementé mi metodología de trabajo en otros equipos, aumentando el rendimiento mediante la mejora de la comunicación, la resolución de conflictos y la provisión de herramientas para una planificación efectiva y entregas incrementales.",
+                "Lideré equipos multifuncionales y establecí una estandarización de metodologías para el seguimiento de proyectos y la comunicación clara.",
+                "Desarrollé e implementé funcionalidades frontend que integran la lógica empresarial en los procesos de planificación, permitiendo la trazabilidad entre el progreso del proyecto y los fondos asignados.",
+                "Creé una interfaz para que empresas externas envíen datos de telemetría de pozos registrados, mejorando la recopilación y el monitoreo de datos.",
+                "Mejoré la calidad del código y optimicé los procesos de desarrollo."
             ]
         },
         {
             "empresa": "Departamento General de Irrigación",
-            "cargo": "Frontend Developer",
+            "cargo": "Desarrollador Frontend",
+            "ubicacion": "Mendoza, Argentina",
             "periodo": "2022 - 2023",
             "responsabilidades": [
-                "Desarrollé el sistema de planificación como Lead Frontend, estandarizando procesos, controlando la calidad del código y brindando estructura al proceso.",
-                "Construí el frontend del sistema de procesamiento de muestras, estandarizando procesos para commits, controlando la calidad del código y brindando estructura al proceso.",
-                "Implementé visualizaciones de mapas en una aplicación de telemetría, facilitando la ubicación espacial de los usuarios para auditar sensores."
+                "Diseñé mejoras para agilizar los flujos de trabajo del laboratorio, automatice la generación de solicitudes, se redujo el uso de papel y generé informes de rendimiento para monitorizar la eficiencia del laboratorio.",
+                "Integré visualizaciones de mapas interactivos para mejorar el seguimiento espacial en auditorías de sensores."
             ]
         },
         {
@@ -84,17 +86,18 @@
     ],
     "hard_skills": [
         "React.js",
-        "JavaScript",
+        "Node.js",
         "TypeScript",
-        "CSS",
         "Tailwind",
-        "Git",
-        "Node.js"
+        "PostgreSQL",
+        "MongoDB",
+        "Git"
     ],
     "soft_skills": [
-        "Metodologías Agile",
-        "Scrum",
-        "Interacción con el Cliente"
+        "Liderazgo",
+        "Trabajo en equipo",
+        "Adaptabilidad",
+        "Comunicación"
     ],
     "idiomas": [
         {

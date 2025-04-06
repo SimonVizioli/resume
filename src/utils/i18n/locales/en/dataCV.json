@@ -1,5 +1,5 @@
 {
-    "Home": "I have successfully implemented software solutions in various projects as a Frontend developer. Additionally, I lead and manage projects as a Project Owner and Scrum Master.",
+    "Home": "Passionate Software Developer from Argentina with full-stack experience using React, Node.js, and more. I've successfully implemented software solutions across various projects and excel in leading teams as a Project Owner and Scrum Master, leveraging agile methodologies to drive success. ",
     "Nav": ["Home", "About", "Portfolio", "Contact"],
     "EducationH2": "Academic <1>Background</1>",
     "ExperienceH2": "Work <1>Experience</1>",
@@ -60,9 +60,11 @@
             "ubicacion": "Mendoza, Argentina",
             "periodo": "2023 – 2024",
             "responsabilidades": [
-                "I manage the development team to create custom planning software, integrating the company's business with planning.",
-                "I lead a development team to create sample processing software, facilitating the management, traceability, processing, and delivery of the respective sample results.",
-                "I implemented a logging system to facilitate project progress tracking and used Jira for task and process management."
+                "Implemented my work methodology within an additional team, boosting performance by improving communication, resolving internal conflicts, and providing tools for effective planning and incremental delivery.",
+                "Led cross-functional teams and established a logging methodology for project tracking and clear communication.",
+                "Developed and implemented frontend features that integrate business logic into planning processes, enabling traceability between project progress and allocated funds.",
+                "Created an interface for external companies to submit telemetry data from registered wells, improving data collection and monitoring.",
+                "Enhanced code quality and optimized development processes."
             ]
         },
         {
@@ -71,9 +73,8 @@
             "ubicacion": "Mendoza, Argentina",
             "periodo": "2022 - 2023",
             "responsabilidades": [
-                "I developed the planning system as Lead Frontend, standardizing processes, controlling code quality, and providing structure to the process.",
-                "I built the frontend of the sample processing system, standardizing processes for commits, controlling code quality, and providing structure to the process.",
-                "I implemented map visualizations in a telemetry application, facilitating the spatial location of users to audit sensors."
+                "Designed enhancements to streamline sample request workflows, automate document generation, reduce paper usage, and generate performance reports to monitor lab efficiency.",
+                "Integrated interactive map visualizations to enhance spatial tracking for sensor audits."
             ]
         },
         {

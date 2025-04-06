@@ -32,9 +32,11 @@ const dataCV = {
             ubicacion: "Mendoza, Argentina",
             periodo: "2023 – 2024",
             responsabilidades: [
-                "Gestiono el equipo de desarrollo para crear un software de planificación a medida, integrando el negocio de la empresa a la planificación.",
-                "Lidero un equipo de desarrollo para crear un software de procesamiento de muestras, facilitando la gestión, trazabilidad, procesamiento y entrega de los resultados de las respectivas muestras.",
-                "Implementé un sistema de logs para facilitar el seguimiento del avance de los proyectos y utilicé Jira para la gestión de tareas y procesos.",
+                "Implemented my work methodology within an additional team, boosting performance by improving communication, resolving internal conflicts, and providing tools for effective planning and incremental delivery.",
+                "Led cross-functional teams and established a logging methodology for project tracking and clear communication.",
+                "Developed and implemented frontend features that integrate business logic into planning processes, enabling traceability between project progress and allocated funds.",
+                "Created an interface for external companies to submit telemetry data from registered wells, improving data collection and monitoring.",
+                "Enhanced code quality and optimized development processes.",
             ],
         },
         {
@@ -43,9 +45,8 @@ const dataCV = {
             cargo: "Frontend Developer",
             periodo: "2022 - 2023",
             responsabilidades: [
-                "Desarrollé el sistema de planificación como Lead Frontend, estandarizando procesos, controlando la calidad del código y brindando estructura al proceso.",
-                "Construí el frontend del sistema de procesamiento de muestras, estandarizando procesos para commits, controlando la calidad del código y brindando estructura al proceso.",
-                "Implementé visualizaciones de mapas en una aplicación de telemetría, facilitando la ubicación espacial de los usuarios para auditar sensores.",
+                "Designed enhancements to streamline sample request workflows, automate document generation, reduce paper usage, and generate performance reports to monitor lab efficiency.",
+                "Integrated interactive map visualizations to enhance spatial tracking for sensor audits.",
             ],
         },
         {
@@ -112,14 +113,21 @@ const dataCV = {
     proyectos: [
         {
             id: 1,
-            title: "ExpensesApp",
+            title: "Stock Tracker",
+            image: "/src/assets/under-construction.webp",
+            urlGithub: "https://github.com/SimonVizioli/autoctono-frontend",
+            urlDemo: "#!",
+        },
+        {
+            id: 1,
+            title: "Workout Tracker",
             image: "/src/assets/under-construction.webp",
             urlGithub: "https://github.com/SimonVizioli/WorkoutTracker",
             urlDemo: "#!",
         },
         {
             id: 2,
-            title: "Workout Tracker",
+            title: "Expenses Tracker",
             image: "/src/assets/under-construction.webp",
             urlGithub: "https://github.com/SimonVizioli/BudgetApp",
             urlDemo: "#!",
@@ -135,17 +143,18 @@ const dataCV = {
     habilidades_adicionales: {
         hard_skills: [
             "React.js",
-            "JavaScript",
-            "TypeScript",
-            "CSS",
-            "Tailwind",
-            "Git",
             "Node.js",
+            "TypeScript",
+            "Tailwind",
+            "PostgreSQL",
+            "MongoDB",
+            "Git",
         ],
         soft_skills: [
-            "Metodologías Agile",
-            "Scrum",
-            "Interacción con el Cliente",
+            "Leadership",
+            "Teamwork",
+            "Adaptability",
+            "Communication",
         ],
         idiomas: [
             {
